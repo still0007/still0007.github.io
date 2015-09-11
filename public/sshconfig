@@ -9,12 +9,6 @@ Host tushi
   ForwardAgent yes
   ServerAliveInterval 30
   ServerAliveCountMax 4
-Host ifeng
-  HostName ifeng.dev.cloud.vitrue.com
-  User deploy
-  ForwardAgent yes
-  ServerAliveInterval 30
-  ServerAliveCountMax 4
 Host yzhao
   HostName yzhao.dev.cloud.vitrue.com
   User deploy
