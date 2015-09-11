@@ -1,0 +1,248 @@
+####### uncomment following two lines inside VPN######
+#host *
+#  ProxyCommand /usr/local/bin/corkscrew cn-proxy.jp.oracle.com 80 %h %p
+
+#developer instances
+Host tushi
+  HostName tushi.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host ifeng
+  HostName ifeng.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host yzhao
+  HostName yzhao.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+
+#Dev Integration
+Host int1
+  HostName integrations1.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host int2
+  HostName integrations2.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host act-int
+  HostName accounts-int.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host dashboard-int
+  HostName dashboard-integrations.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+
+#Sandbox Servers
+Host act-sandbox
+  HostName accounts.sandbox.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host srma-engage4
+  HostName srma-engage4.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host broker-sandbox
+  HostName brokerapps-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host wb-sandbox-dev
+  HostName sinaweibo-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host li-sandbox-dev
+  HostName linkedin-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host in-sandbox-dev
+  HostName instagram-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host line-sandbox-dev
+  HostName line-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host wc-sandbox-dev
+  HostName wechat-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tb-sandbox
+  HostName tumblr.sandbox.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host smc-sandbox
+  HostName sm-c-sandbox.staging.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host lxcl-sandbox
+  HostName lexical.sandbox.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-sandbox-app
+  HostName 54.204.157.204
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-sandbox-util
+  HostName 54.211.205.130
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host fm-sandbox
+  HostName formable.sandbox.ey.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host up-sandbox
+  HostName uploadable.sandbox.ey.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host shop-sandbox-dev
+  HostName shop-sandbox.dev.cloud.vitrue.com
+  User deploy
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+#Staging servers
+Host act-staging
+  HostName accounts.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host pub-staging
+  HostName publisher.staging.ey.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host pub-staging-rsq1
+  HostName ec2-54-237-13-76.compute-1.amazonaws.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host pub-staging-rsq2
+  HostName ec2-72-44-57-201.compute-1.amazonaws.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host pub-staging-rsq3
+  HostName ec2-23-20-209-255.compute-1.amazonaws.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host wb-staging-app
+  HostName sina-weibo.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host wb-staging-util
+  HostName 23.23.4.27
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host li-staging-app
+  HostName linkedin.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host li-staging-util
+  HostName 54.197.182.236
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host in-staging-app
+  HostName instagram.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host in-staging-util
+  HostName 54.146.65.240
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tb-staging-app
+  HostName tumblr.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host shop-staging
+  HostName shop.staging.cloud.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-staging-app-master
+  HostName 54.80.75.180
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-staging-app-1
+  HostName 50.17.116.52
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-staging-util-master
+  HostName 54.242.35.158
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host tabs-staging-util-1
+  HostName 54.211.0.73
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host fm-staging
+  HostName formable-staging.ey.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
+Host up-staging
+  HostName uploadable-staging.ey.vitrue.com
+  User deploy
+  ForwardAgent yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 4
